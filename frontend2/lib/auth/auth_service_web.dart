@@ -21,7 +21,7 @@ class AuthServiceImplementation implements AuthService {
 
         return OidcUserSession(
           userInfo: {
-            'sub': info.sub,
+            'sub': info.subject,
             'name': info.name,
             'email': info.email,
             'preferred_username': info.preferredUsername,
@@ -59,7 +59,7 @@ class AuthServiceImplementation implements AuthService {
 
       return OidcUserSession(
         userInfo: {
-          'sub': info.sub,
+          'sub': info.subject,
           'name': info.name,
           'email': info.email,
           'preferred_username': info.preferredUsername,
