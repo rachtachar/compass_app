@@ -1,0 +1,11 @@
+{
+  "issuer": "http://localhost:8000",
+  "client_id": "flutter-web-client-12345",
+  "client_type": "public",
+  "redirect_uri": "http://localhost:50000",
+  "scopes": [
+    "openid",
+    "profile",
+    "email"
+  ]
+}
