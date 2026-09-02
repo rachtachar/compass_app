@@ -1,24 +1,17 @@
-# Frontend 2: Flutter Web OpenID Connect Client
+# frontend2
 
-This is a Flutter Web client that authenticates against `backend2` (`django-oidc-provider`) using the standard **OAuth 2.0 / OpenID Connect Authorization Code Flow with PKCE**.
+A new Flutter project.
 
-## Features
-- **OIDC Discovery**: Discovers endpoints dynamically from `http://localhost:8000/.well-known/openid-configuration`
-- **Authorization Code + PKCE**: Uses `openid_client` browser flow for secure public client authentication
-- **UserInfo & ID Token**: Fetches and inspects claims (`sub`, `name`, `email`, `preferred_username`, `iss`, `aud`, `exp`)
-- **RS256 Signature Verification**: ID Token verified against backend public JWKS
+## Getting Started
 
-## Prerequisites
-Make sure `backend2` is running on `http://localhost:8000`.
+This project is a starting point for a Flutter application.
 
-## How to Run
+A few resources to get you started if this is your first Flutter project:
 
-```bash
-# 1. Navigate to frontend2
-cd frontend2
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-# 2. Run on Google Chrome at fixed port 50000
-flutter run -d chrome --web-port 50000
-```
-
-> **Note**: The web port must be fixed at `50000` to match the registered redirect URI in `backend2` (`http://localhost:50000`).
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

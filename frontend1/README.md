@@ -1,24 +1,17 @@
-# Frontend 1: Flutter Client for JWT Authentication
+# frontend1
 
-This is a Flutter client for authenticating against `backend1` (Django REST Framework + SimpleJWT).
+A new Flutter project.
 
-## Features
-- **JWT Login**: `POST /api/token/` to obtain Access and Refresh tokens
-- **Protected API Calls**: Calls `GET /api/bookings/` sending `Authorization: Bearer <access_token>`
-- **Token Refresh**: Automatically or manually refreshes expired access tokens via `POST /api/token/refresh/`
-- **Stateless Token Inspector**: Decodes and displays JWT payload claims directly in UI
+## Getting Started
 
-## Prerequisites
-Make sure `backend1` is running on `http://localhost:8000` (or configured port).
+This project is a starting point for a Flutter application.
 
-## How to Run
+A few resources to get you started if this is your first Flutter project:
 
-```bash
-# 1. Navigate to frontend1
-cd frontend1
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-# 2. Run on Chrome, Windows Desktop, or Mobile
-flutter run -d chrome
-# or
-flutter run -d windows
-```
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
